@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230726 10:30:16.028" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo" source="C:\Users\lucas\Documents\Robot Projects\ProjectRobot\demo.robot">
+<test id="s1-t1" name="Test Case 1" line="10">
+<kw name="Do Something">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing something...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230726 10:30:16.043" level="INFO">I am doing something...</msg>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<kw name="Do Something Else">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing something else...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230726 10:30:16.043" level="INFO">I am doing something else...</msg>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</test>
+<test id="s1-t2" name="Test Case 2" line="15">
+<kw name="Do Another Thing">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing another thing</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230726 10:30:16.043" level="INFO">I am doing another thing</msg>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<kw name="Do Something Else">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing something else...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230726 10:30:16.043" level="INFO">I am doing something else...</msg>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${variavel}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230726 10:30:16.043" level="INFO">Teste</msg>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${lista_variavel}[0]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230726 10:30:16.043" level="INFO">Banana</msg>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${lista_variavel}[1]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230726 10:30:16.043" level="INFO">Uva</msg>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{lista_variavel}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20230726 10:30:16.043" level="INFO">Banana</msg>
+<msg timestamp="20230726 10:30:16.043" level="INFO">Uva</msg>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</kw>
+<status status="PASS" starttime="20230726 10:30:16.043" endtime="20230726 10:30:16.043"/>
+</test>
+<status status="PASS" starttime="20230726 10:30:16.028" endtime="20230726 10:30:16.059"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
