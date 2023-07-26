@@ -12,9 +12,11 @@ Test Teardown   Close the browser
 Should be able to access Team page
     [Documentation]         Access team page
     [Tags]                  001
+
     FrontOfficeApp.Access Team Page
 
 Team page should match requirements
     [Documentation]         Match Requirements from Team page
     [Tags]                  002
+
     FrontOfficeApp.Check Requirements from Team Page

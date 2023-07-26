@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230726 16:01:09.539" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230726 16:51:40.321" rpa="false" schemaversion="4">
 <suite id="s1" name="Front Office" source="C:\Users\lucas\Documents\Robot Projects\robot-linkedin-course-test\Front Office\tests\Front_Office.robot">
 <test id="s1-t1" name="Should be able to access Team page" line="12">
 <kw name="Open the browser" library="Common" type="SETUP">
@@ -7,55 +7,55 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 16:01:09.743" level="INFO">Opening browser 'chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
-<status status="PASS" starttime="20230726 16:01:09.743" endtime="20230726 16:01:12.599"/>
+<msg timestamp="20230726 16:51:40.509" level="INFO">Opening browser 'chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
+<status status="PASS" starttime="20230726 16:51:40.508" endtime="20230726 16:51:43.468"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230726 16:01:12.599" endtime="20230726 16:01:12.722"/>
+<status status="PASS" starttime="20230726 16:51:43.468" endtime="20230726 16:51:43.582"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>.2s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230726 16:01:12.723" endtime="20230726 16:01:12.724"/>
+<status status="PASS" starttime="20230726 16:51:43.582" endtime="20230726 16:51:43.583"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20230726 16:01:12.724" endtime="20230726 16:01:12.929"/>
+<status status="PASS" starttime="20230726 16:51:43.583" endtime="20230726 16:51:43.788"/>
 </kw>
-<status status="PASS" starttime="20230726 16:01:09.742" endtime="20230726 16:01:12.929"/>
+<status status="PASS" starttime="20230726 16:51:40.508" endtime="20230726 16:51:43.788"/>
 </kw>
 <kw name="Access Team Page" library="FrontOfficeApp">
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>Team</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230726 16:01:12.933" level="INFO">Clicking link 'Team'.</msg>
-<status status="PASS" starttime="20230726 16:01:12.931" endtime="20230726 16:01:13.634"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENT_TEAM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230726 16:51:43.789" level="INFO">Clicking element 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
+<status status="PASS" starttime="20230726 16:51:43.789" endtime="20230726 16:51:44.247"/>
 </kw>
-<kw name="Wait Until Page Contains" library="SeleniumLibrary">
-<arg>Our Amazing Team</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230726 16:01:13.634" endtime="20230726 16:01:13.874"/>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${ELEMENT_AMAZING_TEAM}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230726 16:51:44.247" endtime="20230726 16:51:44.478"/>
 </kw>
-<status status="PASS" starttime="20230726 16:01:12.930" endtime="20230726 16:01:13.874"/>
+<status status="PASS" starttime="20230726 16:51:43.788" endtime="20230726 16:51:44.478"/>
 </kw>
 <kw name="Close the browser" library="Common" type="TEARDOWN">
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230726 16:01:16.877" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230726 16:01:13.876" endtime="20230726 16:01:16.877"/>
+<msg timestamp="20230726 16:51:47.479" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230726 16:51:44.479" endtime="20230726 16:51:47.479"/>
 </kw>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230726 16:01:16.877" endtime="20230726 16:01:19.323"/>
+<status status="PASS" starttime="20230726 16:51:47.479" endtime="20230726 16:51:49.746"/>
 </kw>
-<status status="PASS" starttime="20230726 16:01:13.875" endtime="20230726 16:01:19.323"/>
+<status status="PASS" starttime="20230726 16:51:44.479" endtime="20230726 16:51:49.747"/>
 </kw>
 <doc>Access team page</doc>
 <tag>001</tag>
-<status status="PASS" starttime="20230726 16:01:09.742" endtime="20230726 16:01:19.323"/>
+<status status="PASS" starttime="20230726 16:51:40.507" endtime="20230726 16:51:49.747"/>
 </test>
 <test id="s1-t2" name="Team page should match requirements" line="17">
 <kw name="Open the browser" library="Common" type="SETUP">
@@ -63,88 +63,88 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230726 16:01:19.325" level="INFO">Opening browser 'chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
-<status status="PASS" starttime="20230726 16:01:19.325" endtime="20230726 16:01:26.496"/>
+<msg timestamp="20230726 16:51:49.752" level="INFO">Opening browser 'chrome' to base url 'https://automationplayground.com/front-office/'.</msg>
+<status status="PASS" starttime="20230726 16:51:49.752" endtime="20230726 16:51:57.000"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230726 16:01:26.496" endtime="20230726 16:01:26.813"/>
+<status status="PASS" starttime="20230726 16:51:57.000" endtime="20230726 16:51:57.330"/>
 </kw>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>.2s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20230726 16:01:26.813" endtime="20230726 16:01:26.813"/>
+<status status="PASS" starttime="20230726 16:51:57.330" endtime="20230726 16:51:57.331"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20230726 16:01:26.813" endtime="20230726 16:01:27.014"/>
+<status status="PASS" starttime="20230726 16:51:57.331" endtime="20230726 16:51:57.536"/>
 </kw>
-<status status="PASS" starttime="20230726 16:01:19.325" endtime="20230726 16:01:27.014"/>
+<status status="PASS" starttime="20230726 16:51:49.752" endtime="20230726 16:51:57.536"/>
 </kw>
 <kw name="Check Requirements from Team Page" library="FrontOfficeApp">
 <kw name="Click Link" library="SeleniumLibrary">
 <arg>Team</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230726 16:01:27.018" level="INFO">Clicking link 'Team'.</msg>
-<status status="PASS" starttime="20230726 16:01:27.016" endtime="20230726 16:01:27.735"/>
+<msg timestamp="20230726 16:51:57.538" level="INFO">Clicking link 'Team'.</msg>
+<status status="PASS" starttime="20230726 16:51:57.537" endtime="20230726 16:51:58.237"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Our Amazing Team</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230726 16:01:27.735" endtime="20230726 16:01:27.946"/>
+<status status="PASS" starttime="20230726 16:51:58.237" endtime="20230726 16:51:58.471"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Kay Garland</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230726 16:01:27.946" endtime="20230726 16:01:28.178"/>
+<status status="PASS" starttime="20230726 16:51:58.471" endtime="20230726 16:51:58.682"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Lead Designer</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230726 16:01:28.178" endtime="20230726 16:01:28.405"/>
+<status status="PASS" starttime="20230726 16:51:58.682" endtime="20230726 16:51:58.894"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Larry Parker</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230726 16:01:28.405" endtime="20230726 16:01:28.632"/>
+<status status="PASS" starttime="20230726 16:51:58.894" endtime="20230726 16:51:59.105"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Lead Marketer</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230726 16:01:28.632" endtime="20230726 16:01:28.860"/>
+<status status="PASS" starttime="20230726 16:51:59.105" endtime="20230726 16:51:59.316"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Diana Pertersen</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230726 16:01:28.860" endtime="20230726 16:01:29.080"/>
+<status status="PASS" starttime="20230726 16:51:59.316" endtime="20230726 16:51:59.527"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Lead Developer</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230726 16:01:29.080" endtime="20230726 16:01:29.307"/>
+<status status="PASS" starttime="20230726 16:51:59.527" endtime="20230726 16:51:59.738"/>
 </kw>
-<status status="PASS" starttime="20230726 16:01:27.015" endtime="20230726 16:01:29.307"/>
+<status status="PASS" starttime="20230726 16:51:57.537" endtime="20230726 16:51:59.738"/>
 </kw>
 <kw name="Close the browser" library="Common" type="TEARDOWN">
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230726 16:01:32.310" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230726 16:01:29.309" endtime="20230726 16:01:32.310"/>
+<msg timestamp="20230726 16:52:02.738" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230726 16:51:59.738" endtime="20230726 16:52:02.738"/>
 </kw>
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20230726 16:01:32.310" endtime="20230726 16:01:34.563"/>
+<status status="PASS" starttime="20230726 16:52:02.738" endtime="20230726 16:52:05.001"/>
 </kw>
-<status status="PASS" starttime="20230726 16:01:29.308" endtime="20230726 16:01:34.564"/>
+<status status="PASS" starttime="20230726 16:51:59.738" endtime="20230726 16:52:05.001"/>
 </kw>
 <doc>Match Requirements from Team page</doc>
 <tag>002</tag>
-<status status="PASS" starttime="20230726 16:01:19.324" endtime="20230726 16:01:34.565"/>
+<status status="PASS" starttime="20230726 16:51:49.750" endtime="20230726 16:52:05.002"/>
 </test>
 <doc>Front Office Example</doc>
-<status status="PASS" starttime="20230726 16:01:09.540" endtime="20230726 16:01:34.569"/>
+<status status="PASS" starttime="20230726 16:51:40.322" endtime="20230726 16:52:05.006"/>
 </suite>
 <statistics>
 <total>
